@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    backdrop-filter: blur(18px) saturate(180%); 
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    background-color: #ffffff;
+    min-width: 100vw;
+    height:150px;
+    top: 0;  
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+}
+.header nav ul li{
+    text-decoration: none;   
+    margin-left: 2vw;
+    padding: 5px;
+}
+
+.header nav ul li a:hover{
+    color: #cb1b2c;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+/* 
+% = relativo a su contenedor
+vh = % alto relativo a la pantalla en la que se vea
+vw = %  ancho relativo a la pantalla en la que se vea
+ */
+.main{
+    margin-top: 150px;
+    min-height: 100vh;
+    position: relative;
+    justify-content: center;
+}
+
+.logo{
+    position: absolute;
+    left: 2vw;
+    padding-top:1vh ;
+}
+.img-logo{
+    width: 273px;
+    height: 111px;
+}
+.nav{
+    text-decoration: none;
+    position: absolute;
+    left: 20vw;
+    margin-right: 2vw;
+}
+
+
+.pags{
+    position: absolute;
+}
+
+h2{
+    display: inline-block;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h3{
+    display: inline-block;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+p{
+    display: inline-block;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header nav ul li{
+    font-family: HelveticaNeueLTStd-Lt, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+}
+
+body{    
+    min-height: 100vh;
+    background-color: #F4F4EC;
+}
+
+/* ////////////////////////////////////////////////-HOME-////////////////////////////////////////////////////// */
+.cont-subtitulo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    
+}
+
+.subtitulo-nov{
+    font-size: 64px;
+    font-family: 'Hammersmith-One';
+    width: 100%;
+    height: 85px;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    margin: 20px 0 20px;
+}
+
+
+
+.article-1{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 97%;
+    height: 700px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.section-1{
+    display: flex;
+    order: 1;
+    flex-flow: column wrap;
+    width: 372px;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.section-2{
+    display: flex;
+    order: 2;
+    flex-flow: column wrap;
+    width: 531px;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+
+}
+
+.section-3{
+    display: flex;
+    order: 3;
+    flex-flow: column wrap;
+    width: 372px;
+    height: 100%;
+    right: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#sub-index{
+    font-size: 32px;
+    width: 372px;
+    height: 32px;
+    text-align: center;
+    color: #333;
+}
+
+#desc-index{
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    width: 372px;
+    height: 105px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+.cont-thrasher{
+    display: inline-block;
+    width: 372px;
+    height: 500px;
+}
+.img-thrasher{
+    width: 372px;
+    height: 500px;
+}
+
+.cont-potato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 531px;
+    height: 500px;
+}
+.img-potato{
+    display: flex;
+    order: 1;
+    width: 531px;
+    height: 322px;
+}
+
+
+.cont-sandy{
+    display: inline-block;
+    width: 372px;
+    height: 500px;
+}
+.img-sandy{
+    display: inline-block;
+    width: 372px;
+    height: 500px;
+}
+
+/* ////////////////////////////////////////-NOSOTROS-////////////////////////////////////////////////////////// */
+
+.vans-50{
+    width: 268px;
+    height: 253px;
+    display: inline-block;
+    
+}
+
+.nosotros-1{
+    width: 38.7vw;
+    height: 25.4vh;
+    font-size: 20px;
+}
+.nosotros-2{
+    width: 38.7vw;
+    height: 39.3vh;
+}
+
+/* ////////////////////////////////////////-PRODUCTOS-///////////////////////////////////////////////////////// */
+.contenedor-grids{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    column-gap: 165px;
+    grid-template-rows: repeat(2, 330px 34px 132px);
+    row-gap: 9px;
+    align-items: center;
+    width: 97%;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 200px auto;
+    grid-template-areas:
+    "gif-calzado gif-buzos gif-camperas"
+    "calzados-h2 buzos-h2 camperas-h2"
+    "calzados-p buzos-p camperas-p"
+    "gif-accesorios gif-remeras gif-pantalones"
+    "accesorios-h2 remeras-h2 pantalones-h2"
+    "accesorios-p remeras-p pantalones-p"
+    ;
+}
+.gif-calzado{
+    grid-area: gif-calzado;
+}
+.gif-buzos{
+    grid-area: gif-buzos;
+}
+.gif-camperas{
+    grid-area: gif-camperas;
+}
+
+.calzados-h2{
+    grid-area: calzados-h2;
+}
+.buzos-h2{
+    grid-area: buzos-h2;
+}
+.camperas-h2{
+    grid-area: camperas-h2;
+}
+
+.calzados-p{
+    grid-area: calzados-p;
+}
+.buzos-p{
+    grid-area: buzos-p;
+}
+.camperas-p{
+    grid-area: camperas-p;
+}
+
+.gif-accesorios{
+    grid-area: gif-accesorios;
+}
+.gif-remeras{
+    grid-area: gif-remeras;
+}
+.gif-pantalones{
+    grid-area: gif-pantalones;
+}
+
+.accesorios-h2{
+    grid-area: accesorios-h2;
+}
+.remeras-h2{
+    grid-area: remeras-h2;
+}
+.pantalones-h2{
+    grid-area: pantalones-h2;
+}
+
+.accesorios-p{
+    grid-area: accesorios-p;
+}
+.remeras-p{
+    grid-area: remeras-p;
+}
+.pantalones-p{
+    grid-area: pantalones-p;
+}
+
+.grids-h2{
+    font-size: 32px;
+    text-align: center;
+    color: #333;
+}
+
+.grids-p{
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 23px;
+}
+
+#articulos{
+    width: 330px;
+    height: 330px;
+}
+/* ///////////////////////////////////////////////-FOOTER-///////////////////////////////////////////////////// */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    padding: 0 50px;
+    margin-top: auto;
+    background-color: #1c1c1c;
+}
+footer ul li{
+    font-family: HelveticaNeueLTStd-Lt, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+}
+
+footer ul li img{
+    width: 80px;
+    height: 80px;
+}
