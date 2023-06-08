@@ -21,16 +21,22 @@ a{
     z-index: 1;
     align-items: center;
 }
-.header nav ul li{
+.p-home{
     text-decoration: none;   
     margin-left: 2vw;
     padding: 5px;
 }
 
-.header nav ul li a:hover{
+.link-header:hover{
     color: #cb1b2c;
     border-radius: 5px;
     transition: 0.4s;
+    box-shadow:#1c1c1c;
+}
+
+.link-header {
+    text-decoration: none;
+    color: black;
 }
 /* 
 % = relativo a su contenedor
@@ -42,12 +48,13 @@ vw = %  ancho relativo a la pantalla en la que se vea
     min-height: 100vh;
     position: relative;
     justify-content: center;
+    background-color: #F4F4EC;
 }
 
 .logo{
     position: absolute;
     left: 2vw;
-    padding-top:1vh ;
+    padding-top:1vh;
 }
 .img-logo{
     width: 273px;
@@ -86,7 +93,7 @@ header nav ul li{
     display: inline-block;
 }
 
-body{    
+.body{    
     min-height: 100vh;
     background-color: #F4F4EC;
 }
@@ -133,6 +140,7 @@ body{
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    margin-left: 10px;
 }
 
 .section-2{
@@ -214,26 +222,91 @@ body{
     height: 500px;
 }
 
-/* ////////////////////////////////////////-NOSOTROS-////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////-NOSOTROS-////////////////////////////////////////////////////// */
+.nosotros{
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
 
+.cont-vans-50{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 704px;
+    top: 0;
+    margin-bottom: 10px;
+}
 .vans-50{
     width: 268px;
     height: 253px;
     display: inline-block;
+    align-items: center;
     
+}
+.cont-nosotros-1{
+    display: inline-block;
 }
 
 .nosotros-1{
-    width: 38.7vw;
-    height: 25.4vh;
-    font-size: 20px;
-}
-.nosotros-2{
-    width: 38.7vw;
-    height: 39.3vh;
+    width: 704px;
+    height: 133px;
+    font-size: 22px;
+    left: 0;
 }
 
-/* ////////////////////////////////////////-PRODUCTOS-///////////////////////////////////////////////////////// */
+.cont-primer-local{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 528px;
+    height: 352px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.primer-local{
+    width: 528px;
+    height: 352px;
+}
+
+.cont-nosotros-2{
+    display: inline-block;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    margin-top: 40px;
+
+}
+
+.nosotros-2{
+    width: 704px;
+    height: 206px;
+    font-size: 22px;
+    justify-content: flex-start;
+}
+
+.img-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    width: 662px;
+    height: 400px;
+}
+
+.amano{
+    display: inline-block;
+    width: 240px;
+    height: 400px;
+}
+
+.shoe-fabrica{
+    display: inline-block;
+    width: 398px;
+    height: 400px;
+}
+
+/* /////////////////////////////////////////////-PRODUCTOS-//////////////////////////////////////////////////// */
 .contenedor-grids{
     display: grid;
     grid-template-columns: repeat(3, 330px);
@@ -244,8 +317,8 @@ body{
     width: 97%;
     height: 100vh;
     margin: 0 auto;
-    margin-top: 150px;
-    margin-bottom: 200px auto;
+    margin-top: 190px;
+    margin-bottom: 200px;
     grid-template-areas:
     "gif-calzado gif-buzos gif-camperas"
     "calzados-h2 buzos-h2 camperas-h2"
@@ -254,6 +327,9 @@ body{
     "accesorios-h2 remeras-h2 pantalones-h2"
     "accesorios-p remeras-p pantalones-p"
     ;
+}
+.grid{
+    height: 160vh;
 }
 .gif-calzado{
     grid-area: gif-calzado;
@@ -315,12 +391,16 @@ body{
     grid-area: pantalones-p;
 }
 
+/* Titulos de los productos */
 .grids-h2{
+    font-style: normal;
+    font-weight: 400;
     font-size: 32px;
     text-align: center;
     color: #333;
 }
 
+/* Descripcion de los productos */
 .grids-p{
     font-size: 20px;
     text-align: center;
@@ -328,10 +408,46 @@ body{
     margin-bottom: 23px;
 }
 
+/* Fotos de los productos */
 #articulos{
     width: 330px;
     height: 330px;
 }
+
+/* ///////////////////////////////////////////////-ENCONTRANOS-//////////////////////////////////////////////// */
+.cont-caba{
+    display: flex;
+    display: inline-block;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 1178px;
+    height: 254px;
+}
+
+.local-1{
+    display: flexbox;
+    width: 502px;
+    height: 254px;
+}
+
+.local-2{
+    display: flexbox;
+    width: 502px;
+    height: 254px;
+}
+
+
+
+
+
+
+/* ///////////////////////////////////////////////-ATENCION-/////////////////////////////////////////////////// */
+
+
+
+
+
 /* ///////////////////////////////////////////////-FOOTER-///////////////////////////////////////////////////// */
 .footer{
     display: flex;
